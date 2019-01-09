@@ -124,6 +124,12 @@ footer {
   justify-content: center;
 }
 
+#logo {
+  position: fixed;
+  width: 4%;
+  margin: 25px;
+}
+
 /* ---------------------------------
 
             landing page
@@ -139,12 +145,6 @@ footer {
   background-position: center;
   background-color: #333;
   background-blend-mode: overlay;
-}
-
-#logo {
-  position: absolute;
-  width: 4%;
-  margin: 25px;
 }
 
 #headline-container {

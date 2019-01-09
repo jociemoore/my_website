@@ -63,7 +63,7 @@ li {
 }
 
 section {
-  padding: 100px 50px;
+  padding: 100px 105px;
 }
 
 hr {
@@ -183,10 +183,6 @@ footer {
 
 #bam {
   background-color: #ecf0f1;
-}
-
-#bam > div {
-  width: 90%;
 }
 
 #bam-title-container {

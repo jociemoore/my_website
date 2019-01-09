@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <title>Jocie Moore</title>
-   <!--Typekit Fonts-->
-  <script src="https://use.typekit.net/vzl8aff.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-   <!--CSS-->
+  <!--CSS-->
+  <link rel="stylesheet" href="https://use.typekit.net/xxo2hny.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!--Meta Data-->
@@ -17,69 +15,78 @@
 </head>
 <body>
   <header>
-    <img src="assets/logoWhite.svg" alt="Jocie Moore logo" />
+    <img id="logo" src="assets/logoWhite.svg" alt="Jocie Moore logo" />
   </header>
   <main>
     <section id="landing-page">
-      <h1>JOCIE MOORE</h1>
-      <p>a software engineer.</p>
-    </section>
-    <section>
-      <img src="assets/avatar.png" alt="Avatar" />
-      <h3>Hi.</h3>
-      <p>I am a Bay Area software engineer with experience in frontend and backend application development. I am a co-creator of BAM!. </p>
-    </section>
-    <section>
-      <img src="assets/bamDeploy.gif" alt="A gif showing the BAM! deploy command" />
-      <div>
-        <img src="assets/bamLogo.svg" alt="BAM! logo" />
-        <h2>The BAM! Framework</h2>
-        <p>BAM! is an open-source, lightweight serverless framework used to quickly build and deploy applications with Node.js® and Amazon Web Services (AWS).</p>
-        <p>BAM! abstracts away the complexities of working with AWS and enables a developer to deploy a lambda function integrated with an Amazon API Gateway with less configuration, in one command, and in at least 55% less time than similar frameworks.</p>
-        <a href="https://bam-lambda.com">READ CASE STUDY</a>
+      <div id="headline-container" class="flexbox horz-center">
+        <h1>I'm Jocie</h1>
+        <p>a software engineer.</p>
       </div>
     </section>
-    <section>
+    <section id="intro" class="flexbox horz-center">
+      <img id="avatar" src="assets/avatar.png" alt="Avatar" />
+      <h3>Hi.</h3>
+      <p>I'm a Bay Area software engineer with experience in frontend and backend application development. I co-created the BAM! framework.</p>
+    </section>
+    <section id="bam" class="flexbox horz-center">
+      <div id="bam-title-container" class="flexbox">
+        <img id="bam-logo" src="assets/bamLogo.svg" alt="BAM! logo" />
+        <h2>The BAM! Framework</h2>
+      </div>
+      <div id="bam-info-container" class="flexbox">
+        <div>
+          <img id="deploy-command-gif" src="assets/bamDeploy.gif" alt="A gif showing the BAM! deploy command" />
+        </div>
+        <div class="flexbox">
+          <p>BAM! is an open-source, lightweight serverless framework used to quickly build and deploy applications with Node.js® and Amazon Web Services (AWS).</p>
+          <p>BAM! abstracts away the complexities of working with AWS and enables a developer to deploy a lambda function integrated with an Amazon API Gateway with one command, less configuration, and at least 55% less time compared to similar frameworks.</p>
+          <a id="case-study-btn" class="btn" href="https://bam-lambda.com">READ CASE STUDY</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="flexbox horz-center">
       <h2>Check out my other projects.</h2>
-      <ul>
+      <ul class="flexbox vert-center">
         <li>
           <img src="assets/airlineApp.png" alt="Screenshot of airline routes view application" />
-          <h3>Airline Routes Viewer</h3>
-          <p>A ReactJS application that allows users to view airline routes and filter them by airline and/or airport. It was deployed through Heroku and bootstrapped with Create React App.</p>
+          <h4>Airline Routes Viewer</h4>
+          <p>A ReactJS application that allows users to view airline routes and filter them by airline or airport. The airline routes viewer was deployed through Heroku and bootstrapped with Create React App.</p>
         </li>
         <li>
           <img src="assets/sushiApp.png" alt="Screenshot of Takeout Sushi SPA" />
-          <h3>Takeout Sushi SPA</h3>
-          <p>A single page application (SPA) for viewing sushi menu items and ordering takeout. The webstore was developed using a client-side MVC architecture pattern, Backbone, Express, Pug, Stylus, and Handlebars.</p>
+          <h4>Takeout Sushi</h4>
+          <p>A single page application (SPA) for viewing sushi menu items and ordering takeout. The webstore was developed using a client-side MVC architecture pattern, Backbone.js, Express, Pug, Stylus, and Handlebars.</p>
         </li>
         <li>
           <img src="assets/ticketApp.png" alt="Screenshot of ticket tracker application" />
-          <h3>Ticket Tracker</h3>
-          <p>A Ruby on Rails application for managing projects. Users can login, create projects, add tickets, and monitor progress as other users edit, comment on, and/or close tickets. The app was developed using Ruby (2.5.1), Rails (5.2.1), ERB templates, ActiveRecord, PostgreSQL, and Heroku.</p>
+          <h4>Project Management Tool</h4>
+          <p>Users can login, create projects, add tickets, and monitor progress as other users edit, comment on, and close tickets. The app was developed using Ruby on Rails, ERB templates, ActiveRecord, PostgreSQL, and Heroku.</p>
         </li>
       </ul>
     </section>
-    <section>
+    <hr>
+    <section id="contact" class="flexbox horz-center">
       <h2>Get in touch.</h2>
       <h3><a href="mailto:hello@jociemoore.com">hello@jociemoore.com</a></h3>
-      <ul>
+      <ul class="flexbox vert-center">
         <li>
-          <a href="https://www.linkedin.com/in/jocie-moore" target="_blank"><img src="assets/linkedIn.svg" alt="Link to Jocie Moore's LinkedIn profile" /></a>
+          <a href="https://www.linkedin.com/in/jocie-moore" target="_blank"><img class="icon" src="assets/linkedIn.svg" alt="Link to Jocie Moore's LinkedIn profile" /></a>
         </li>
         <li>
-          <a href="https://github.com/jociemoore" target="_blank"><img src="assets/github.svg" alt="Link to Jocie Moore's Github repositories" /></a>
+          <a href="https://github.com/jociemoore" target="_blank"><img class="icon" src="assets/github.svg" alt="Link to Jocie Moore's Github repositories" /></a>
         </li>
         <li>
-          <a href="https://medium.com/@jocie.moore" target="_blank"><img src="assets/medium.svg" alt="Link to Jocie Moore's Medium articles" /></a>
+          <a href="https://medium.com/@jocie.moore" target="_blank"><img class="icon" src="assets/medium.svg" alt="Link to Jocie Moore's Medium articles" /></a>
         </li>
         <li>
-          <a href="assets/JocieMooreResume.pdf" target="_blank"><img src="assets/resume.svg" alt="Link to Jocie Moore's resume" /></a>
+          <a href="assets/JocieMooreResume.pdf" target="_blank"><img class="icon" src="assets/resume.svg" alt="Link to Jocie Moore's resume" /></a>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-    <h4>&#169; 2019 Jocie Moore | Site Design and Development</h4>
+  <footer class="flexbox horz-center">
+    <h5>&#169; 2019 Jocie Moore | Site Design & Development</h5>
   </footer>
   <!--JavaScript-->
   <script src="js/main.js"></script>

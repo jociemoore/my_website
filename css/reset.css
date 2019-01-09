@@ -7,8 +7,11 @@ Description:  Resets default styling of common browsers to a common base
 ----------------------------------------
 */
 
+* { box-sizing: border-box; }
 ul,ol { list-style: none; }
-h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+h1,h2,h3,h4,h5,h6,pre,code,p {
+  font-size: 1em;
+  cursor: default; }
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,dl,dt,dd, figure, figcaption {
   margin: 0;
   padding: 0; }

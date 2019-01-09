@@ -1,0 +1,280 @@
+/* ---------------------------------
+
+                general
+
+------------------------------------ */
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "azo-sans-uber", Courier, sans-serif;
+  font-size: 3rem;
+  color: #ecf0f1;
+}
+
+h2 {
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #450838;
+  margin: 25px 0;
+}
+
+h4 {
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #450838;
+  margin: 25px 0;
+  text-align: center;
+}
+
+h5 {
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+p {
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  width: 25%;
+  margin: 0 2%;
+}
+
+section {
+  padding: 100px 50px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecf0f1;
+  width: 15%;
+}
+
+footer {
+  padding: 25px 0;
+  background-color: #262626;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.btn {
+  border: solid 1px #450838;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "azo-sans-web", Courier, sans-serif;
+  font-weight: 700;
+  background-color: #450838;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon {
+  background-color: #450838;
+  width: 100%;
+  padding: 3px;
+  margin: 2%;
+  border: solid 1px #450838;
+  border-radius: 25px;
+}
+
+.btn:hover,
+.icon:hover {
+  background-color: #600d4e;
+  border-color: #600d4e;
+}
+
+.horz-center {
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.vert-center {
+  flex-direction: row;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------
+
+            landing page
+
+------------------------------------ */
+
+#landing-page {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/landingPageBg.png');
+  background-position: center;
+  background-color: #333;
+  background-blend-mode: overlay;
+}
+
+#logo {
+  position: absolute;
+  width: 4%;
+  margin: 25px;
+}
+
+#headline-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#headline-container p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------
+
+               intro
+
+------------------------------------ */
+
+#avatar {
+  display: block;
+  width: 200px;
+}
+
+#intro > p {
+  text-align: center;
+  width: 425px;
+}
+
+/* ---------------------------------
+
+                bam
+
+------------------------------------ */
+
+#bam {
+  background-color: #ecf0f1;
+}
+
+#bam > div {
+  width: 90%;
+}
+
+#bam-title-container {
+  justify-content: center;
+}
+
+#bam-logo {
+  width: 50px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+#bam h2 {
+  display: inline-block;
+}
+
+#bam-info-container {
+  margin-top: 75px;
+}
+
+#bam-info-container > div {
+  width: 50%;
+  margin-right: 5%;
+  flex-direction: column;
+}
+
+#bam-info-container > div:first-of-type {
+  margin-right: 2.5%;
+}
+
+#deploy-command-gif {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border: solid 10px #282828;
+  border-radius: 10px;
+  background-color: #282828;
+}
+
+#bam-info-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#bam p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#case-study-btn {
+  margin-top: 25px;
+  width: 228px;
+}
+
+/* ---------------------------------
+
+              projects
+
+------------------------------------ */
+
+#projects > ul {
+  margin-top: 75px;
+  align-items: flex-start;
+}
+
+#projects img {
+  width: 100%;
+  box-shadow: 0 0 25px #d2d7d3;
+}
+
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#contact {
+  padding-top: 50px;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  width: 20%;
+}
+
+#contact li {
+  margin: 5%;
+}

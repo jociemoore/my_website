@@ -13,12 +13,14 @@ h1 {
   font-family: "azo-sans-uber", Courier, sans-serif;
   font-size: 3rem;
   color: #ecf0f1;
+  text-align: center;
 }
 
 h2 {
   font-family: "azo-sans-web", Courier, sans-serif;
   font-weight: 900;
   font-size: 2.2rem;
+  text-align: center;
 }
 
 h3 {
@@ -64,7 +66,7 @@ li {
 }
 
 section {
-  padding: 100px 105px;
+  padding: 100px 10%;
 }
 
 hr {
@@ -105,6 +107,7 @@ footer {
 .icon {
   background-color: #450838;
   width: 100%;
+  min-width: 30px;
   padding: 3px;
   margin: 2%;
   border: solid 1px #450838;
@@ -132,7 +135,7 @@ footer {
 
 #logo {
   position: fixed;
-  width: 4%;
+  width: 60px;
   margin: 25px;
   opacity: 0.5;
 }
@@ -174,7 +177,9 @@ footer {
 
 #avatar {
   display: block;
-  width: 200px;
+  width: 25%;
+  max-width: 200px;
+  min-width: 125px;
 }
 
 #intro > p {
@@ -280,3 +285,173 @@ footer {
 #contact li {
   margin: 5%;
 }
+
+/* ---------------------------------
+
+           media queries
+
+------------------------------------ */
+
+@media(max-width: 860px) {
+	section {
+		padding: 100px 15%;
+	}
+
+	li {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	#logo {
+		width: 50px;
+	}
+
+	#bam-info-container {
+		flex-direction: column;
+		margin-top: 50px;
+		align-items: center;
+	}
+
+	#bam-info-container > div:first-of-type {
+  	margin-right: 0;
+	}
+
+	#bam-info-container > div:last-of-type {
+	  margin-left: 0;
+	}
+
+	#bam-info-container > div {
+		width: 90%;
+	}
+
+	#deploy-command-gif {
+		margin-bottom: 50px;
+	}
+
+	#projects > ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contact ul {
+		width: 30%;
+	}
+
+	#contact li {
+		margin: 10%;
+	}
+}
+
+
+@media(max-width: 690px) {
+	#bam-logo {
+		width: 75px;
+		margin-bottom: 25px;
+	}
+
+	#bam-title-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#bam-logo {
+		margin-right: 0;
+	}
+}
+
+@media(max-width: 570px) {
+	h1 {
+		width: 80vw;
+		font-size: 2.7rem;
+	}
+
+	h2 {
+		font-size: 1.9rem;
+	}
+
+	section {
+		padding: 75px 18%;
+	}
+
+	#logo {
+		margin: 15px;
+	}
+
+	#intro > p {
+		width: 100%;
+	}
+
+	#bam-info-container {
+		margin-top: 25px;
+	}
+
+	#case-study-btn {
+		align-self: center;
+	}
+}
+
+@media(max-width: 465px) {
+	h5 {
+		font-size: 0.6rem;
+	}
+
+	footer {
+		padding: 15px;
+	}
+
+	#logo {
+		width: 40px;
+	}
+
+	#bam-logo {
+		width: 60px;
+	}
+}
+
+
+@media(max-width: 400px) {
+	html {
+		font-size: 16px;
+	}
+
+	h1 {
+	  font-size: 2.5rem;
+	}
+
+	h2 {
+	  font-size: 1.7rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	h4 {
+	  font-size: 1rem;
+	}
+
+	section {
+		padding: 50px 20%;
+	}
+
+	#projects > ul {
+		margin-top: 50px;
+	}
+
+	#projects li {
+		margin-bottom: 50px;
+	}
+
+	#projects li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	#case-study-btn {
+		width: 180px;
+	}
+}
+

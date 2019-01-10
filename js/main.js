@@ -1,6 +1,9 @@
 /* eslint-env browser */
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
+  const html = document.querySelector('html');
+  html.classList.add('fadedIn');
+
   const windowHeight = window.innerHeight;
   const logo = document.getElementById('logo');
   const logoTopPosition = logo.getBoundingClientRect().top;
@@ -16,12 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     switch (colorType) {
       case 'hoverLogo':
         logo.src = 'assets/logoPurple.svg';
+        logo.style.opacity = 1;
         break;
       case 'lightLogo':
         logo.src = 'assets/logoWhite.svg';
+        logo.style.opacity = 0.5;
         break;
       default:
         logo.src = 'assets/logoBlack.svg';
+        logo.style.opacity = 0.5;
     }
   };
 

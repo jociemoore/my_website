@@ -6,6 +6,7 @@
 
 html {
   font-size: 18px;
+  opacity: 0;
 }
 
 h1 {
@@ -77,6 +78,11 @@ footer {
   background-color: #262626;
 }
 
+.fadedIn {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
 .flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -128,6 +134,7 @@ footer {
   position: fixed;
   width: 4%;
   margin: 25px;
+  opacity: 0.5;
 }
 
 /* ---------------------------------

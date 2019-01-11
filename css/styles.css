@@ -189,7 +189,7 @@ footer {
 
 #intro > p {
   text-align: center;
-  width: 425px;
+  width: 430px;
 }
 
 /* ---------------------------------
@@ -443,10 +443,19 @@ footer {
 
   #logo {
     width: 40px;
+    margin: 15px 10px;
+  }
+
+  #bam-info-container > div {
+    width: 100%;
   }
 
   #bam-logo {
     width: 60px;
+  }
+
+  #projects > ul {
+    width: 100%;
   }
 
   #contact li {
@@ -477,7 +486,7 @@ footer {
   }
 
   section {
-    padding: 50px 20%;
+    padding: 50px 18%;
   }
 
   #projects > ul {

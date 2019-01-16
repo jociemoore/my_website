@@ -4,6 +4,10 @@
 
 ------------------------------------ */
 
+#preload {
+  display: none;
+}
+
 html {
   font-size: 18px;
   opacity: 0;
@@ -153,7 +157,7 @@ footer {
 #landing-page {
   background-blend-mode: overlay;
   background-color: #333;
-  background-image: url('../assets/landingPageBg.png');
+  background-image: url('../assets/landingPageBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -4,13 +4,16 @@
 
 ------------------------------------ */
 
+body {
+  opacity: 0;
+}
+
 #preload {
   display: none;
 }
 
 html {
   font-size: 18px;
-  opacity: 0;
 }
 
 h1 {

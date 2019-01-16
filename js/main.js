@@ -1,6 +1,6 @@
 /* eslint-env browser */
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const html = document.querySelector('html');
   html.classList.add('fadedIn');
 

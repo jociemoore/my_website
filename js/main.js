@@ -1,9 +1,6 @@
 /* eslint-env browser */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const body = document.querySelector('body');
-  body.classList.add('fadedIn');
-
   const logo = document.getElementById('logo');
 
   // Helper Functions

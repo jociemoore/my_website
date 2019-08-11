@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const changeLogoTo = (colorType) => {
     switch (colorType) {
       case 'hoverLogo':
-        logo.src = 'assets/logoPurple.svg';
+        logo.src = 'https://jociemoore.s3-us-west-1.amazonaws.com/assets/logoPurple.svg';
         logo.style.opacity = 1;
         break;
       case 'lightLogo':
-        logo.src = 'assets/logoWhite.svg';
+        logo.src = 'https://jociemoore.s3-us-west-1.amazonaws.com/assets/logoWhite.svg';
         logo.style.opacity = 0.5;
         break;
       default:
-        logo.src = 'assets/logoBlack.svg';
+        logo.src = 'https://jociemoore.s3-us-west-1.amazonaws.com/assets/logoBlack.svg';
         logo.style.opacity = 0.5;
     }
   };

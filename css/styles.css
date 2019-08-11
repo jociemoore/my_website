@@ -188,7 +188,7 @@ footer {
 #landing-page {
   background-blend-mode: overlay;
   background-color: #333;
-  background-image: url('../assets/landingPageBg.jpg');
+  background-image: url('https://jociemoore.s3-us-west-1.amazonaws.com/assets/landingPageBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,7 +434,7 @@ footer {
 
 @media(max-width: 570px) {
   #landing-page {
-    background-image: url('../assets/landingPageBg-mobile.jpg');
+    background-image: url('https://jociemoore.s3-us-west-1.amazonaws.com/assets/landingPageBg-mobile.jpg');
   }
 
   h1 {
